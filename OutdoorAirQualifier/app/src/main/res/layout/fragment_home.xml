@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:orientation="vertical"
+    android:background="#dbdbdb"
+    >
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:id="@+id/device_connect"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolBar"
+        android:text="Device Connect"
+        android:textColor="#FFFFFF"
+        />
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:background="#dbdbdb">
+        <!-- İki sütunlu birinci satır  -->
+        <TableRow
+            android:id="@+id/satir1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <TextView
+                android:id="@+id/coo2"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="CO2"
+                android:textColor="#1E88E5"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="60dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="Temp"
+                android:textColor="#039BE5"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:id="@+id/satir2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:stretchColumns="0,1">
+
+            <TextView
+                android:id="@+id/co2value"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="--"
+                android:textColor="#000000"
+
+
+                />
+
+            <TextView
+                android:id="@+id/ppmunit"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="ppm"
+                android:textColor="#E53935" />
+
+            <TextView
+                android:id="@+id/tempvalue"
+                android:layout_width="25dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="--"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tempunit"
+                android:layout_width="25dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="C"
+                android:textColor="#E53935" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/satir3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="Humidity"
+                android:textColor="#1E88E5"
+
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/pressure"
+                android:layout_width="50dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="Pressure"
+                android:textColor="#1E88E5"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:id="@+id/satir4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/humidityvalue"
+                android:layout_width="120dp"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="--"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/humidityunit"
+                android:layout_width="25dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="%"
+                android:textColor="#E53935" />
+
+            <TextView
+                android:id="@+id/pressurevalue"
+                android:layout_width="25dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="--"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/pressureunit"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="mbar"
+                android:textColor="#E53935" />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>
